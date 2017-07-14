@@ -1,3 +1,4 @@
+
 class MyCar
 
   attr_accessor :color

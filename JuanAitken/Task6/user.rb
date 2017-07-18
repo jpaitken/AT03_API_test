@@ -1,4 +1,5 @@
 class User
+  
   attr_accessor :h
   $ctrl_name =0
   $ctrl_id =0

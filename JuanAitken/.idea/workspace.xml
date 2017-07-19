@@ -21,7 +21,7 @@
     <SUITE FILE_PATH="coverage/JuanAitken@guest.coverage" NAME="guest Coverage Results" MODIFIED="1500327781674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Task6" MODULE_NAME="JuanAitken" />
     <SUITE FILE_PATH="coverage/JuanAitken@timer.coverage" NAME="timer Coverage Results" MODIFIED="1499981446862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="JuanAitken" />
     <SUITE FILE_PATH="coverage/JuanAitken@firtsClass.coverage" NAME="firtsClass Coverage Results" MODIFIED="1499969789518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="JuanAitken" />
-    <SUITE FILE_PATH="coverage/JuanAitken@registration.coverage" NAME="registration Coverage Results" MODIFIED="1500421903065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/RubyTest" MODULE_NAME="JuanAitken" />
+    <SUITE FILE_PATH="coverage/JuanAitken@registration.coverage" NAME="registration Coverage Results" MODIFIED="1500422369737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/RubyTest" MODULE_NAME="JuanAitken" />
     <SUITE FILE_PATH="coverage/JuanAitken@arrays_one.coverage" NAME="arrays_one Coverage Results" MODIFIED="1500065468409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Task 5" MODULE_NAME="JuanAitken" />
     <SUITE FILE_PATH="coverage/JuanAitken@testint.coverage" NAME="testint Coverage Results" MODIFIED="1499981753143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="JuanAitken" />
     <SUITE FILE_PATH="coverage/JuanAitken@person__1_.coverage" NAME="person (1) Coverage Results" MODIFIED="1500296291768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Task 5" MODULE_NAME="JuanAitken" />
@@ -46,20 +46,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registration.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="registration.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RubyTest/registration.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="77" column="37" lean-forward="false" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
+            <state relative-caret-position="862">
+              <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logger.log" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/RubyTest/logger.log">
+      <file leaf-file-name="execution.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RubyTest/execution.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-311">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -541,12 +541,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1499964735721</updated>
-      <workItem from="1499964740362" duration="59442000" />
+      <workItem from="1499964740362" duration="59941000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59442000" />
+    <option name="totallyTimeSpent" value="59941000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -910,18 +910,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RubyTest/registration.rb">
+    <entry file="file://$PROJECT_DIR$/RubyTest/logger.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="77" column="37" lean-forward="false" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
+        <state relative-caret-position="216">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RubyTest/logger.log">
+    <entry file="file://$PROJECT_DIR$/RubyTest/execution.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-311">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RubyTest/registration.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="862">
+          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding />
         </state>
       </provider>

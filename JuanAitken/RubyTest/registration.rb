@@ -2,7 +2,7 @@ require_relative "Distance"
 class Registration
   include Distance
   attr_accessor :user_name, :id, :h
-  $file = File.open('logger.log', 'a')
+  $file = File.open('execution.log', 'a')
   def initialize
     @user_name
     @id
@@ -53,14 +53,17 @@ end
         puts "Plese insert how many milimeters do you want convert to centimeters"
         mili=gets.to_i
         puts "#{mili} milimeters are #{milimeters_to_centimeters mili} centimeters"
+        $file.write("#{mili} milimeters are #{milimeters_to_centimeters mili} centimeters\n")
       when 2
         puts "Plese insert how many centimeters do you want convert to meters"
         centi= gets.to_i
         puts "#{centi} centimeters are #{centimeters_to_meters centi} meters"
+        $file.write ("#{centi} centimeters are #{centimeters_to_meters centi} meters\n")
       when 3
         puts "Please insert how many meters do you want to convert to kilometers"
         meters=gets.to_i
         puts "#{centi} meters are #{meters_to_kilometers meters} kilometers"
+        $file.write ("#{centi} meters are #{meters_to_kilometers meters} kilometers\n")
     end
 
   end

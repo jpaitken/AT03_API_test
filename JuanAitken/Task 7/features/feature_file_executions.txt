@@ -1,0 +1,141 @@
+---------WITHOUT DRY--RUN-----------------------
+#This feature file is for testing
+# Pivotal tracker workspaces feature
+# feature file wrote by fundacion jala
+Feature: create a workspace
+
+  Scenario: create                                                    # features
+/create_workspace.feature:5
+    When I navigate to dashboard workspace                            # features
+/step_definitions/workspace_steps.rb:1
+      workspacecreated
+    And create a new worksapce as:                                    # features
+/step_definitions/workspace_steps.rb:5
+      workspacecreated
+      | Name | MyWorkspaceTest |
+    Then "MyWorkspaceTest" should be displayed in dashboard workspace # features
+/step_definitions/workspace_steps.rb:10
+      workspacecreated
+
+  Scenario: Create a workspace leaving the name field in blank    # features/cre
+ate_workspace.feature:12
+    When I navigate to dashboard workspace                        # features/ste
+p_definitions/workspace_steps.rb:1
+      workspacecreated
+    And create a new worksapce as:                                # features/ste
+p_definitions/workspace_steps.rb:5
+      workspacecreated
+      | Name |  |
+    Then Error message should be "Workspace name can't be blank." # features/ste
+p_definitions/workspace_steps.rb:14
+      workspacecreated
+
+  Scenario: Create a workspace with name already exist
+  # features/create_workspace.feature:20
+    When I navigate to dashboard workspace
+  # features/step_definitions/workspace_steps.rb:1
+      workspacecreated
+    And create a new worksapce as:
+  # features/step_definitions/workspace_steps.rb:5
+      workspacecreated
+      | Name | MyWorkspaceTest |
+    Then Error message must be "The workspace name you entered is already taken.
+" # features/step_definitions/workspace_steps.rb:18
+      workspacecreated
+
+#This feature file is for testing
+# Pivotal tracker workspaces feature
+# feature file wrote by fundacion jala
+Feature: create a workspace
+
+  Scenario: create                                                    # features
+/step_definitions/create_workspace.feature:5
+    When I navigate to dashboard workspace                            # features
+/step_definitions/workspace_steps.rb:1
+      workspacecreated
+    And create a new worksapce as:                                    # features
+/step_definitions/workspace_steps.rb:5
+      workspacecreated
+      | Name | MyWorkspaceTest |
+    Then "MyWorkspaceTest" should be displayed in dashboard workspace # features
+/step_definitions/workspace_steps.rb:10
+      workspacecreated
+
+  Scenario: Create a workspace leaving the name field in blank    # features/ste
+p_definitions/create_workspace.feature:12
+    When I navigate to dashboard workspace                        # features/ste
+p_definitions/workspace_steps.rb:1
+      workspacecreated
+    And create a new worksapce as:                                # features/ste
+p_definitions/workspace_steps.rb:5
+      workspacecreated
+      | Name |  |
+    Then Error message should be "Workspace name can't be blank." # features/ste
+p_definitions/workspace_steps.rb:14
+      workspacecreated
+
+  Scenario: Create a workspace with name already exist
+  # features/step_definitions/create_workspace.feature:20
+    When I navigate to dashboard workspace
+  # features/step_definitions/workspace_steps.rb:1
+      workspacecreated
+    And create a new worksapce as:
+  # features/step_definitions/workspace_steps.rb:5
+      workspacecreated
+      | Name | MyWorkspaceTest |
+    Then Error message must be "The workspace name you entered is already taken.
+" # features/step_definitions/workspace_steps.rb:18
+      workspacecreated
+          
+6 scenarios (6 passed)
+18 steps (18 passed)
+0m0.598s
+
+------------------WITH --DRY-RUN----------------------------------
+
+C:\Users\Administrator\Desktop\Ruby\AT03_API_test\JuanAitken\Task 7>cucumber --d
+ry-run
+#This feature file is for testing
+# Pivotal tracker workspaces feature
+# feature file wrote by fundacion jala
+Feature: create a workspace
+
+  Scenario: create                                                    # features
+/features/create_workspace.feature:5
+    When I navigate to dashboard workspace                            # features
+/features/step_definitions/workspace_steps.rb:1
+    And create a new worksapce as:                                    # features
+/features/step_definitions/workspace_steps.rb:5
+      | Name | MyWorkspaceTest |
+    Then "MyWorkspaceTest" should be displayed in dashboard workspace # features
+/features/step_definitions/workspace_steps.rb:10
+
+  Scenario: Create a workspace leaving the name field in blank    # features/fea
+tures/create_workspace.feature:12
+    When I navigate to dashboard workspace                        # features/fea
+tures/step_definitions/workspace_steps.rb:1
+    And create a new worksapce as:                                # features/fea
+tures/step_definitions/workspace_steps.rb:5
+      | Name |  |
+    Then Error message should be "Workspace name can't be blank." # features/fea
+tures/step_definitions/workspace_steps.rb:14
+
+  Scenario: Create a workspace with name already exist
+  # features/features/create_workspace.feature:20
+    When I navigate to dashboard workspace
+  # features/features/step_definitions/workspace_steps.rb:1
+    And create a new worksapce as:
+  # features/features/step_definitions/workspace_steps.rb:5
+      | Name | MyWorkspaceTest |
+    Then Error message must be "The workspace name you entered is already taken.
+" # features/features/step_definitions/workspace_steps.rb:18
+
+3 scenarios (3 skipped)
+9 steps (9 skipped)
+
+
+---------------CONCLUSION---------------------
+
+--dry-run: only executes the feature file
+
+-run: executes the feature files and the steps defenitions

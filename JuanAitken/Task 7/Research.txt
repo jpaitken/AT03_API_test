@@ -1,0 +1,91 @@
+1. When and why BDD was defined?
+TDD Origins
+2003: agiledox, the ancestor of BDD, is a tool generating technical documentation automatically from JUnit tests, written by Chris Stevenson
+2004: in order to test his hypotheses about de-emphasizing "test" terminology in favor of "behavior", Dan North releases JBehave
+2006: in collaboration with, North proposes the given-when-then canvas to expand the scope of BDD to business analysis and documents the approach in "Introducing BDD"
+2006-2009: several new tools are released confirming the community's investment in BDD, such as RSpec or more recently, Cucumber and GivWenZen
+
+BDD was developed by Dan North as responce to the problems that come from TDD as:
+* Where the process should begin.
+* What should be tested and what not.
+* What is test coverage.
+* How the test shuld be called.
+* How define a failed test.
+
+2. The most important aspects for TDD.
+ 
+* BDD offers more precise guidance on organizing the conversation between developers, testers and product owners.
+* In particular the given-when-then canvas, are closer to everyday language and have a shallower learning curve compared to other tools.
+* Tools targeting a BDD approach generally afford the automatic generation of technical and end user documentation from BDD "specifications".
+* Make easier to understand for the cliend if the app is behaving correctly.
+
+3. Why es usefull and when could be applied?.
+
+* TDD has the ability to write test cases (scenarios) and acceptance criteria before performing any development. This idea is termed as Acceptance Test Driven Development (ATDD).
+* Provides a common domain language, which everybody across the board (developer, tester, PO and business) understands. As at the end it’s plain English, it’s simplest to learn compared to other DSLs (domain specific languages).
+* Developer/tester can then fill in the blanks, i.e. implement the test case using programming language or script.
+* Helps to eliminate waste of time in meetings to define acceptace criteria and the testers and bussines analizers can write acceptance test on any BDD tool.
+
+BDD could be applied in any case, BDD permit a direct communication between DEV - QAs and BAs that avoids misunderstandings and makes easier the development process.
+
+4. Which type of teams could implement BDD
+
+Any kind of teams could implement TDD, this approach facilitates the development process with a direct communication between all the people involved in the project. 
+This approach not only is related aboud direct communication also is to make sure that every team member knows what is propose the product.
+
+5. Structure of a feature
+ - A feature usually contains a list of scenarios. To write whatever  until the first scenario, which starts with Scenario: (or localized equivalent) on a new line. 
+ Use tags to group features and scenarios together, independent of your file and directory structure.
+
+ Feature: Serve coffee
+   In order to earn money
+   Customers should be able to
+   buy coffee at all times
+
+  Scenario: Buy last coffee
+   Given there are 1 coffees left in the machine
+   And I have deposited 1 dollar
+   When I press the coffee button
+   Then I should be served a coffee
+
+6.- Structure of a user story
+
+As a Scrum Master I want to see Lead/Cycle time progress
+
+As a Scrum Master
+I want to see Lead/Cycle time progress
+So that I know whether we are improving our development process or not
+
+Scenario #1
+Given Reports section in project and Bug Tracking practice is disabled
+When I navigate to Lead and Cycle Time Report
+Then I see Lead Time chart
+And chart contains 1 line for stories
+
+7.- Structure of a scenario
+The essential idea is to write a scenario into three sections:
+
+The given part describes the state of the world before you begin the behavior you're specifying in this scenario. You can think of it as the pre-conditions to the test.
+The when section is that behavior that you're specifying.
+Finally the then section describes the changes you expect due to the specified behavior.
+
+Feature: Buy a cup of coffe
+
+Scenario: Buy last coffee
+   Given there are 1 coffees left in the machine
+   And I have deposited 1 dollar
+   When I press the coffee button
+   Then I should be served a coffee
+
+8.- Diferences between BDD and BDT
+
+* BDD is a process of development based on BDT. BDD blends main standards of test-driven development and ideas from domain-driven design and object-oriented analysis to provide software DEVs and BAs with shared tools and a shared process to collaborate on software development.
+* TDT Usually come after /during BDD (Behavior Driven development) but is not a must, it can be organized with traditional testing as well.
+* BDD is focused on development
+* BDT is focused on testing 
+
+
+
+
+
+
